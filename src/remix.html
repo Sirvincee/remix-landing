@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Section 1 -->
+    <header class="w-full h-[10vh] flex items-center lg:h-[11vh]">
+      <!-- logo -->
+      <div
+        class="h-[50%] w-[11%] bg-yellow-300 rounded-full md lg:w-[4.5%] lg:h-[80%] ml-3"
+      >
+        <img src="./images/Remix-logo.png" alt="" />
+      </div>
+      <div
+        class="h-[50%] w-[20%] flex items-center justify-center font-bold lg:text-xl lg:w-[10%] lg:mr-20"
+      >
+        Remix
+      </div>
+
+      <!-- products and services:lg -->
+      <div
+        class="lg:h-[50%] lg:w-[20%] justify-between lg:flex lg:mr-20 hidden"
+      >
+        <span class="h-full flex items-center font-bold">Products</span>
+        <span class="h-full flex items-center font-bold">Pricing</span>
+        <span class="h-full flex items-center font-bold">Search</span>
+      </div>
+
+      <!-- dark and light mode -->
+      <div class="hidden w-[20%] h-[70%] lg:flex justify-around mr-10 ml-5">
+        <span
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md"
+          ><img src="./images/Sun.png" alt="sun" / class=" h-[70%]
+          mr-2">Light</span
+        >
+        <span
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md"
+          ><img src="./images/Moon.png" alt="sun" / class=" h-[80%]
+          mr-2">Dark</span
+        >
+      </div>
+
+      <!-- sign in and 'get figma' -->
+      <div
+        class="h-[55%] borderlight font-bold text-[14px] flex items-center ml-3 justify-center p-3 lg:h-[70%] lg:w-[8%] lg:ml-10 lg:mr-5 rounded-md bg-gray-500"
+      >
+        Sign in
+      </div>
+      <div
+        class="h-[55%] font-bold text-[14px] flex items-center ml-5 justify-center p-2 bg-yellow-300 text-black rounded-md lg:h-[70%] lg:w-[12%] lg:ml-10"
+      >
+        Get Figma Plugin
+      </div>
+    </header>
+
+    <!-- products and services:sm -->
+    <div class="h-[15vh] w-[50%] justify-between lg:hidden">
+      <span class="h-1/3 flex items-center font-bold pl-4">Products</span>
+      <span class="h-1/3 flex items-center font-bold pl-4">Pricing</span>
+      <span class="h-1/3 flex items-center font-bold pl-4">Search</span>
+    </div>
+  </body>
+</html>
