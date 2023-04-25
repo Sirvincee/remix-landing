@@ -9,15 +9,17 @@
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Section 1 -->
-    <header class="w-full h-[10vh] flex items-center lg:h-[11vh]">
+    <header
+      class="w-full h-[10vh] flex items-center lg:h-[11vh] lg:border-b-2 border-zinc-500"
+    >
       <!-- logo -->
       <div
-        class="h-[50%] w-[11%] bg-yellow-300 rounded-full md lg:w-[4.5%] lg:h-[80%] ml-3"
+        class="h-[50%] w-[11%] bg-yellow-300 rounded-full md lg:w-[4.5%] lg:h-[80%] ml-3 lg:ml-10 cursor-pointer"
       >
         <img src="./images/Remix-logo.png" alt="" />
       </div>
       <div
-        class="h-[50%] w-[20%] flex items-center justify-center font-bold lg:text-xl lg:w-[10%] lg:mr-20"
+        class="h-[50%] w-[20%] flex items-center justify-center font-bold lg:text-xl lg:w-[10%] lg:mr-20 lg:pr-14"
       >
         Remix
       </div>
@@ -39,7 +41,7 @@
           mr-2">Light</span
         >
         <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md"
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700"
           ><img src="./images/Moon.png" alt="sun" / class=" h-[80%]
           mr-2">Dark</span
         >
@@ -47,12 +49,12 @@
 
       <!-- sign in and 'get figma' -->
       <div
-        class="h-[55%] borderlight font-bold text-[14px] flex items-center ml-3 justify-center p-3 lg:h-[70%] lg:w-[8%] lg:ml-10 lg:mr-5 rounded-md bg-gray-500"
+        class="h-[55%] borderlight font-bold text-[14px] flex items-center ml-3 justify-center p-3 lg:h-[70%] lg:w-[8%] lg:ml-10 lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer"
       >
         Sign in
       </div>
       <div
-        class="h-[55%] font-bold text-[14px] flex items-center ml-5 justify-center p-2 bg-yellow-300 text-black rounded-md lg:h-[70%] lg:w-[12%] lg:ml-10"
+        class="h-[55%] font-bold text-[14px] flex items-center ml-5 justify-center p-2 bg-yellow-300 text-black rounded-md lg:h-[70%] lg:w-[12%] lg:ml-10 lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer"
       >
         Get Figma Plugin
       </div>
@@ -66,10 +68,10 @@
     </div>
 
     <!-- section 2 -->
-    <main class="borderlight lg:flex flex-row-reverse lg:h-[70vh]">
+    <main class="lg:flex flex-row-reverse lg:h-[70vh]">
       <!-- body image -->
       <section
-        class="w-[85%] h-[350px] lg:h-[450px] m-auto bg-slate-600 rounded-md lg:w-[25%] borderlight"
+        class="w-[85%] h-[350px] lg:h-[450px] m-auto bg-slate-600 rounded-md lg:w-[25%]"
       ></section>
       <!-- heading & paragraph -->
       <section
@@ -88,7 +90,7 @@
           ea.
         </p>
         <div
-          class="w-[40%] text-sm flex items-center justify-center m-auto p-2 rounded-sm bg-yellow-300 text-black font-bold mb-3 lg:w-[40%] lg:p-4 lg:m-0 lg:ml-4 lg:text-base"
+          class="w-[40%] text-sm flex items-center justify-center m-auto p-2 rounded-sm bg-yellow-300 text-black font-bold mb-3 lg:w-[40%] lg:p-4 lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
         >
           Get Figma Plugin
         </div>
@@ -96,7 +98,7 @@
     </main>
 
     <!-- section 3 & 4 -->
-    <main class="borderlight flex flex-col-reverse lg:block">
+    <main class="flex flex-col-reverse lg:block">
       <!-- section 3 -->
       <!-- sign-up -->
       <main class="w-full p-3 bg-gray-700 text-gray-200 lg:p-0 lg:pb-12">
@@ -141,7 +143,7 @@
       <!-- section 4 -->
       <!-- price tags -->
       <main
-        class="w-full h-[100vh] borderlight flex flex-col justify-around items-center my-5 lg:h-[60vh] lg:flex-row lg:my-0 lg:px-20"
+        class="w-full h-[100vh] flex flex-col justify-around items-center my-5 lg:h-[60vh] lg:flex-row lg:my-0 lg:px-20"
       >
         <!-- REMEMBER TO ADD SWIPER-JS TO THIS FOR SMALL SCREENS -->
         <div
@@ -177,7 +179,7 @@
             />Lorem ipsum dolor sit.</span
           >
           <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-black lg:hover:text-white"
+            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
           >
             Suscribe
           </div>
@@ -215,7 +217,7 @@
             />Lorem ipsum dolor sit.</span
           >
           <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-black lg:hover:text-white"
+            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
           >
             Suscribe
           </div>
@@ -254,7 +256,7 @@
             />Lorem ipsum dolor sit.</span
           >
           <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-black lg:hover:text-white"
+            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
           >
             Suscribe
           </div>
@@ -262,24 +264,72 @@
       </main>
       <!--END OF SECTION 4-->
     </main>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <!-- section 5 -->
+    <footer class="w-full h-[25vh] bg-yellow-300 flex relative lg:h-[40vh]">
+      <section class="w-[57%] h-full p-3 lg:w-[55%] lg:flex flex-col lg:p-10">
+        <div
+          class="w-full flex items-center text-black font-bold text-sm p-3 lg:text-xl"
+        >
+          <img
+            src="./images/Remix-logo.png"
+            alt="logo"
+            class="w-9 h-9 rounded-full border-black border-2 mr-1 lg:w-14 lg:h-14 cursor-pointer"
+          />Remix
+        </div>
+        <div class="hidden lg:block text-black p-3 text-sm pr-14">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          debitis maiores obcaecati assumenda modi, laborum tenetur laboriosam
+          nihil? Sit sapiente eligendi autem sequi ducimus qui, quos non labore
+          minima distinctio.
+        </div>
+        <div
+          class="w-full text-xs items-center text-black font-bold p-3 lg:text-[16px] lg:mt-8 lg:flex"
+        >
+          <p>&copy 2023. All rights reserved.</p>
+          <br />
+          <p class="lg:mt-1 ml-3">
+            Made with
+            <span class="mx-1"
+              ><img
+                src="./images/Ezinne-love.png"
+                alt="love"
+                class="w-6 h-6 inline"
+            /></span>
+            from Vince
+          </p>
+        </div>
+      </section>
+      <!-- social media -->
+      <section class="w-[45%] h-[20%] absolute bottom-7 right-2 flex">
+        <div class="h-full w-[25%] flex items-center justify-center">
+          <img
+            src="./images/Ezinne-facebook.png"
+            alt="facebook"
+            class="w-5 h-5 lg:w-8 lg:h-8 cursor-pointer"
+          />
+        </div>
+        <div class="h-full w-[25%] flex items-center justify-center">
+          <img
+            src="./images/Ezinne-twitter.png"
+            alt="facebook"
+            class="w-5 h-5 lg:w-8 lg:h-8 cursor-pointer"
+          />
+        </div>
+        <div class="h-full w-[25%] flex items-center justify-center">
+          <img
+            src="./images/Ezinne-linkedin.png"
+            alt="facebook"
+            class="w-5 h-5 lg:w-8 lg:h-8 cursor-pointer"
+          />
+        </div>
+        <div class="h-full w-[25%] flex items-center justify-center">
+          <img
+            src="./images/Ezinne-insta.png"
+            alt="facebook"
+            class="w-5 h-5 lg:w-8 lg:h-8 cursor-pointer"
+          />
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
