@@ -10,7 +10,7 @@
   <body class="bg-gray-900 text-white">
     <!-- Section 1 -->
     <header
-      class="w-full h-[10vh] flex items-center lg:h-[11vh] lg:border-b-2 border-zinc-500 justify-evenly px-2 md:h-[10vh] md:justify-around md:px-10"
+      class="w-full h-[10vh] flex items-center lg:h-[10vh] lg:border-b-2 border-gray-700 justify-evenly px-2 md:h-[10vh] md:justify-around md:px-10"
     >
       <!-- logo -->
       <div
@@ -70,11 +70,13 @@
     </div>
 
     <!-- section 2 -->
-    <main class="lg:flex flex-row-reverse lg:h-[70vh]">
+    <main class="lg:flex flex-row-reverse lg:h-[80vh]">
       <!-- body image -->
       <section
-        class="w-[73%] h-[350px] lg:h-[450px] m-auto bg-slate-600 rounded-md lg:w-[25%] mt-3"
-      ></section>
+        class="m-auto rounded-md lg:w-[50%] lg:h-full my-3 lg:mt-0 lg:pt-7 lg:mr-9"
+      >
+        <img src="./images/remix-bg.png" alt="background-img" />
+      </section>
       <!-- heading & paragraph -->
       <section
         class="mt-3 lg:pl-5 lg:w-[50%] lg:flex flex-col justify-center lg:p-10 lg:ml-[50px]"
@@ -92,7 +94,7 @@
           ea.
         </p>
         <div
-          class="w-[40%] text-sm flex items-center justify-center m-auto p-3 rounded-sm bg-yellow-300 text-black font-bold mb-3 lg:w-[40%] lg:p-4 lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
+          class="w-[40%] text-sm flex items-center justify-center m-auto p-3 rounded-md bg-yellow-300 text-black font-bold mb-7 lg:w-[40%] lg:p-[18px] lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
         >
           Get Figma Plugin
         </div>
@@ -100,46 +102,54 @@
     </main>
 
     <!-- section 3 & 4 -->
-    <main class="flex flex-col-reverse lg:block">
+    <main class="flex flex-col-reverse border-t-2 border-gray-700 lg:pt-7">
       <!-- section 3 -->
       <!-- sign-up -->
-      <main class="w-full p-3 bg-gray-700 text-gray-200 lg:p-0 lg:pb-12">
-        <h2
-          class="font-bold font-mono text-xl p-3 text-white lg:text-3xl lg:w-1/2 lg:px-10 lg:pt-12"
-        >
-          Get the Ultimate Developer Hand Off Guide
-        </h2>
-        <p class="text-xs px-3 lg:w-1/2 lg:text-sm lg:px-10 lg:pt-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ad
-          repellendus dignissimos ullam quam corrupti nisi accusamus mollitia.
-        </p>
-        <p
-          class="hidden lg:block text-xs px-3 lg:w-1/2 lg:text-sm lg:px-10 lg:pb-5"
-        >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-          accusantium iure, dolor vitae officiis eaque ducimus sunt. Et
-          consectetur hic dignissimos quaerat saepe dolore blanditiis inventore
-          in nostrum vel? Dolorum, cupiditate non ducimus debitis quisquam
-          voluptate eveniet fugiat dolore a.
-        </p>
-        <div
-          class="w-full h-14 flex mt-3 ml-3 lg:w-1/2 lg:px-10 lg:ml-0 items-center"
-        >
-          <div class="h-[60%] w-[55%] rounded-md">
-            <input
-              type="email"
-              name=""
-              id=""
-              class="h-full w-full text-sm pl-4 rounded-sm border-transparent lg:text-base text-black"
-              placeholder="Enter email address"
-            />
-          </div>
-          <div
-            class="p-4 w-[40%] text-sm font-bold flex items-center justify-center bg-black rounded-sm text-white ml-2 cursor-pointer lg:text-base lg:border-transparent lg:rounded-md lg:ml-5 lg:hover:bg-yellow-300 lg:hover:text-black"
+      <main
+        class="w-full p-3 bg-gray-800 text-gray-200 lg:p-0 lg:w-full lg:flex flex-row-reverse lg:h-[45vh]"
+      >
+        <!-- signup-image -->
+        <!-- <section class="w-1/2 borderlight h-full"></section> -->
+        <section class="lg:block h-full lg:w-1/2 lg:pt-10">
+          <h2
+            class="font-bold font-mono text-xl p-3 text-white lg:text-3xl lg:w-full lg:px-10"
           >
-            Send Guide
+            Get the Ultimate Developer Hand Off Guide
+          </h2>
+          <p class="text-xs px-3 lg:w-full lg:text-sm lg:px-10 lg:pt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+            ad repellendus dignissimos ullam quam corrupti nisi accusamus
+            mollitia.
+          </p>
+          <p
+            class="hidden lg:block text-xs px-3 lg:w-full lg:text-sm lg:px-10 lg:pb-5"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+            accusantium iure, dolor vitae officiis eaque ducimus sunt. Et
+            consectetur hic dignissimos quaerat saepe dolore blanditiis
+            inventore in nostrum vel? Dolorum, cupiditate non ducimus debitis
+            quisquam voluptate eveniet fugiat dolore a.
+          </p>
+          <div
+            class="w-full h-14 flex mt-3 ml-3 lg:w-full lg:px-10 lg:ml-0 items-center mb-4"
+          >
+            <div class="h-[70%] w-[55%] rounded-md lg:h-[90%]">
+              <input
+                type="email"
+                name=""
+                id=""
+                class="h-full w-full text-sm pl-4 rounded-md border-transparent lg:text-base text-black"
+                placeholder="Enter email address"
+              />
+            </div>
+            <div
+              class="p-3 w-[40%] text-sm font-bold flex items-center justify-center bg-yellow-300 rounded-md text-black ml-2 cursor-pointer lg:text-base lg:border-transparent lg:rounded-md lg:ml-5 lg:hover:bg-gray-700 lg:hover:text-white"
+            >
+              Send Guide
+            </div>
           </div>
-        </div>
+        </section>
+        <section class="w-1/2 hidden lg:block"></section>
       </main>
 
       <!-- section 4 -->
@@ -149,7 +159,7 @@
       >
         <!-- REMEMBER TO ADD SWIPER-JS TO THIS FOR SMALL SCREENS -->
         <div
-          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10"
+          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
           <h2 class="text-2xl pb-4 lg:text-4xl lg:mb-2">
@@ -187,7 +197,7 @@
           </div>
         </div>
         <div
-          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10"
+          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10 bg-gray-800"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
           <h2 class="text-2xl pb-4 lg:text-3xl lg:mb-2">
@@ -226,7 +236,7 @@
         </div>
 
         <div
-          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-4 py-10"
+          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-4 py-10"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
           <h2 class="text-2xl pb-4 lg:text-4xl lg:mb-2">
@@ -334,6 +344,8 @@
         </div>
       </section>
     </footer>
+    <br />
+    <br />
     <br />
     <br />
     <br />
