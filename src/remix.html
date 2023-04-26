@@ -10,17 +10,17 @@
   <body class="bg-gray-900 text-white">
     <!-- Section 1 -->
     <header
-      class="w-full h-[10vh] flex items-center lg:h-[11vh] lg:border-b-2 border-zinc-500 justify-evenly px-2"
+      class="w-full h-[10vh] flex items-center lg:h-[11vh] lg:border-b-2 border-zinc-500 justify-evenly px-2 md:h-[10vh] md:justify-around md:px-4"
     >
       <!-- logo -->
       <div
-        class="h-[50%] w-[11%] rounded-full md lg:w-[4.5%] lg:h-[80%] lg:ml-10 cursor-pointer"
+        class="h-[50%] w-[11%] rounded-full md lg:w-[4.5%] lg:h-[80%] lg:ml-10 cursor-pointer md:w-20 md:h-16 md:p-1"
         style="background-color: #f7ca17"
       >
         <img src="./images/Remix-logo.png" alt="" />
       </div>
       <div
-        class="h-[50%] w-[20%] flex items-center justify-center font-bold lg:text-xl lg:w-[10%] lg:mr-20 lg:pr-14 pr-5"
+        class="h-[50%] w-[20%] flex items-center justify-center font-bold lg:text-xl lg:w-[10%] lg:mr-20 lg:pr-14 pr-5 md:mr-2"
       >
         Remix
       </div>
@@ -35,27 +35,29 @@
       </div>
 
       <!-- dark and light mode -->
-      <div class="hidden w-[20%] h-[70%] lg:flex justify-around mr-10 ml-5">
+      <div
+        class="hidden lg:w-[20%] lg:h-[70%] lg:flex justify-around lg:mr-10 lg:ml-5 md:flex md:w-[27%] md:h-[60%] md:mr-14"
+      >
         <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md"
-          ><img src="./images/Sun.png" alt="sun" / class=" h-[70%]
-          mr-2">Light</span
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md md:p-1"
+          ><img src="./images/Sun.png" alt="sun" / class=" h-[70%] md:h-[50%]
+          lg:mr-2">Light</span
         >
         <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700"
-          ><img src="./images/Moon.png" alt="sun" / class=" h-[80%]
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700 md:p-1"
+          ><img src="./images/Moon.png" alt="sun" / class=" h-[80%] md:h-[50%]
           mr-2">Dark</span
         >
       </div>
 
       <!-- sign in and 'get figma' -->
       <div
-        class="h-[55%] borderlight font-bold text-[14px] flex items-center justify-center p-3 lg:h-[70%] lg:w-[8%] lg:ml-10 lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer"
+        class="h-[55%] borderlight font-bold text-[14px] flex items-center justify-center p-3 lg:h-[70%] lg:w-[8%] lg:ml-10 lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer md:mr-20 md:w-[17%]"
       >
         Sign in
       </div>
       <div
-        class="h-[55%] font-bold text-[14px] flex items-center justify-center p-2 text-black rounded-md lg:h-[70%] lg:w-[12%] lg:ml-10 lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer"
+        class="h-[55%] font-bold text-[14px] flex items-center justify-center p-2 text-black rounded-md lg:h-[70%] lg:w-[12%] lg:ml-10 lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer md:w-[22%]"
         style="background-color: #f7ca17"
       >
         Get Figma Plugin
@@ -63,7 +65,7 @@
     </header>
 
     <!-- products and services:sm -->
-    <div class="h-[15vh] w-[50%] justify-between lg:hidden">
+    <div class="h-[15vh] w-[50%] justify-between lg:hidden md:hidden">
       <span class="h-1/3 flex items-center font-bold pl-4">Products</span>
       <span class="h-1/3 flex items-center font-bold pl-4">Pricing</span>
       <span class="h-1/3 flex items-center font-bold pl-4">Search</span>
@@ -146,11 +148,11 @@
       <!-- section 4 -->
       <!-- price tags -->
       <main
-        class="w-full flex flex-col items-center my-6 lg:flex-row lg:my-0 lg:px-20 lg:justify-around lg:py-7"
+        class="w-full flex flex-col items-center my-6 lg:flex-row lg:my-0 lg:px-20 lg:justify-around lg:py-7 md:flex-row"
       >
         <!-- REMEMBER TO ADD SWIPER-JS TO THIS FOR SMALL SCREENS -->
         <div
-          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-sm lg:rounded-md mb-8 py-10"
+          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
           <h2 class="text-2xl pb-4 lg:text-4xl lg:mb-2">
@@ -192,7 +194,7 @@
           </div>
         </div>
         <div
-          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-sm lg:rounded-md mb-8 py-10"
+          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
           <h2 class="text-2xl pb-4 lg:text-3xl lg:mb-2">
@@ -235,7 +237,7 @@
         </div>
 
         <div
-          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-sm lg:rounded-md mb-4 py-10"
+          class="w-[60%] borderlight lg:w-[20%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-4 py-10"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
           <h2 class="text-2xl pb-4 lg:text-4xl lg:mb-2">
