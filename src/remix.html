@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Remix-Home</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Section 1 -->
     <header
-      class="w-full h-[10vh] flex items-center lg:h-[10vh] lg:border-b-2 border-gray-700 justify-evenly px-2 md:h-[10vh] md:justify-around md:px-10"
+      class="w-full h-[10vh] flex items-center lg:h-[10vh] lg:border-b-2 border-gray-700 justify-evenly px-2 md:h-[10vh] md:justify-around md:px-12"
     >
       <!-- logo -->
       <div
         class="h-[50%] w-[11%] bg-yellow-300 rounded-full md lg:w-[4.5%] lg:h-[80%] lg:ml-10 cursor-pointer"
       >
-        <img src="./images/Remix-logo.png" alt="" />
+        <img src="./images/Remix-logo.png" alt="remix-logo" class="" />
       </div>
       <div
-        class="h-[50%] w-[20%] flex items-center justify-center font-bold lg:text-xl lg:w-[10%] lg:mr-20 lg:pr-14 pr-5 md:mr-2"
+        class="h-[50%] w-[20%] flex items-center justify-center font-bold lg:text-xl lg:w-[10%] lg:mr-20 lg:pr-14 pr-5 md:mr-2 hover:text-yellow-300 transition-all ease-out hover:scale-110"
       >
         Remix
       </div>
@@ -28,35 +28,44 @@
       <div
         class="lg:h-[50%] lg:w-[20%] justify-between lg:flex lg:mr-20 hidden"
       >
-        <span class="h-full flex items-center font-bold">Products</span>
-        <span class="h-full flex items-center font-bold">Pricing</span>
-        <span class="h-full flex items-center font-bold">Search</span>
+        <span
+          class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105"
+          >Products</span
+        >
+        <span
+          class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105"
+          >Pricing</span
+        >
+        <span
+          class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105"
+          >Search</span
+        >
       </div>
 
       <!-- dark and light mode -->
       <div
-        class="hidden lg:w-[20%] lg:h-[70%] lg:flex justify-around lg:mr-10 lg:ml-5 md:flex md:w-[27%] md:h-[50%] md:mr-14"
+        class="hidden lg:w-[18%] lg:h-[72%] lg:flex justify-around lg:mr-10 lg:ml-5 md:flex md:w-[27%] md:h-[50%] md:mr-14"
       >
         <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md md:p-1"
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md md:p-1 cursor-pointer lg:hover:scale-105 transition-all ease-out"
           ><img src="./images/Sun.png" alt="sun" / class=" h-[70%] md:h-[50%]
-          lg:mr-2">Light</span
+          lg:mr-2 transition-all ease-out hover:scale-105">Light</span
         >
         <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700 md:p-1"
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700 md:p-1 cursor-pointer lg:hover:bg-gray-900 lg:hover:scale-105 transition-all ease-out"
           ><img src="./images/Moon.png" alt="sun" / class=" h-[80%] md:h-[50%]
-          mr-2">Dark</span
+          mr-2 transition-all ease-out hover:scale-105">Dark</span
         >
       </div>
 
       <!-- sign in and 'get figma' -->
       <div
-        class="h-[55%] borderlight font-bold text-[14px] flex items-center justify-center p-3 lg:h-[70%] lg:w-[8%] lg:ml-10 lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer md:mr-20 md:w-[17%] md:h-[50%]"
+        class="h-[55%] borderlight font-bold text-[14px] flex items-center justify-center p-3 lg:h-[70%] lg:w-[8%] lg:ml-10 lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer md:mr-20 md:w-[17%] md:h-[50%] lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105"
       >
         Sign in
       </div>
       <div
-        class="h-[55%] font-bold text-[14px] flex items-center justify-center p-2 bg-yellow-300 text-black rounded-md lg:h-[70%] lg:w-[12%] lg:ml-10 lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer"
+        class="h-[55%] font-bold text-[14px] flex items-center justify-center p-2 bg-yellow-300 text-black rounded-md lg:h-[70%] lg:w-[12%] lg:ml-10 lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105"
       >
         Get Figma Plugin
       </div>
@@ -70,7 +79,8 @@
     </div>
 
     <!-- section 2 -->
-    <main class="lg:flex flex-row-reverse lg:h-[80vh]">
+    <!-- descriptional headings -->
+    <main class="lg:flex flex-row-reverse lg:h-[81vh]">
       <!-- body image -->
       <section
         class="m-auto rounded-md lg:w-[50%] lg:h-full my-3 lg:mt-0 lg:pt-7 lg:mr-9"
@@ -94,14 +104,18 @@
           ea.
         </p>
         <div
-          class="w-[40%] text-sm flex items-center justify-center m-auto p-3 rounded-md bg-yellow-300 text-black font-bold mb-7 lg:w-[40%] lg:p-[18px] lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
+          class="w-[40%] text-sm flex items-center justify-center m-auto p-3 rounded-md bg-yellow-300 text-black font-bold mb-7 lg:w-[40%] lg:p-[18px] lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105"
         >
           Get Figma Plugin
         </div>
       </section>
     </main>
 
-    <!-- section 3 & 4 -->
+    <!-- section 3 -->
+    <!-- additional descriptional body -->
+
+    <!-- section 4 & 5 -->
+    <!-- price tags and email suscription -->
     <main class="flex flex-col-reverse border-t-2 border-gray-700 lg:pt-7">
       <!-- section 3 -->
       <!-- sign-up -->
@@ -136,14 +150,14 @@
             <div class="h-[70%] w-[55%] rounded-md lg:h-[90%]">
               <input
                 type="email"
-                name=""
-                id=""
-                class="h-full w-full text-sm pl-4 rounded-md border-transparent lg:text-base text-black"
+                name="email"
+                id="email"
+                class="h-full w-full text-sm pl-4 rounded-md outline-none lg:text-base text-black"
                 placeholder="Enter email address"
               />
             </div>
             <div
-              class="p-3 w-[40%] text-sm font-bold flex items-center justify-center bg-yellow-300 rounded-md text-black ml-2 cursor-pointer lg:text-base lg:border-transparent lg:rounded-md lg:ml-5 lg:hover:bg-gray-700 lg:hover:text-white"
+              class="p-3 w-[40%] text-sm font-bold flex items-center justify-center bg-yellow-300 rounded-md text-black ml-2 cursor-pointer lg:text-base lg:outline-none lg:rounded-md lg:ml-5 lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105"
             >
               Send Guide
             </div>
@@ -155,14 +169,14 @@
       <!-- section 4 -->
       <!-- price tags -->
       <main
-        class="w-full flex flex-col items-center my-6 lg:flex-row lg:my-0 lg:px-20 lg:justify-around lg:py-7 md:flex-row"
+        class="w-full flex flex-col items-center my-6 lg:flex-row lg:my-0 lg:py-7 md:flex-row lg:px-10"
       >
         <!-- REMEMBER TO ADD SWIPER-JS TO THIS FOR SMALL SCREENS -->
         <div
-          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10"
+          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10 lg:mx-20 lg:hover:scale-105 lg:transition-all lg:ease-linear lg:px-5"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
-          <h2 class="text-2xl pb-4 lg:text-4xl lg:mb-2">
+          <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
             $39 <sub class="text-sm">/mo</sub>
           </h2>
           <p class="text-xs pb-5 lg:mb-2">
@@ -191,16 +205,16 @@
             />Lorem ipsum dolor sit.</span
           >
           <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
+            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105"
           >
             Suscribe
           </div>
         </div>
         <div
-          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10 bg-gray-800"
+          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-8 py-10 bg-gray-800 lg:mx-20 lg:hover:scale-105 lg:transition-all lg:ease-linear lg:px-5"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
-          <h2 class="text-2xl pb-4 lg:text-3xl lg:mb-2">
+          <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
             $59 <sub class="text-sm">/mo</sub>
           </h2>
           <p class="text-xs pb-5 lg:mb-2">
@@ -229,17 +243,17 @@
             />Lorem ipsum dolor sit.</span
           >
           <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
+            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105"
           >
             Suscribe
           </div>
         </div>
 
         <div
-          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-4 py-10"
+          class="w-[60%] border-2 border-gray-700 lg:w-[22%] lg:h-[75%] p-3 rounded-md lg:rounded-md mb-4 py-10 lg:mx-20 lg:hover:scale-105 lg:transition-all lg:ease-linear lg:px-5"
         >
           <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
-          <h2 class="text-2xl pb-4 lg:text-4xl lg:mb-2">
+          <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
             $129 <sub class="text-sm">/mo</sub>
           </h2>
           <p class="text-xs pb-5 lg:mb-2">
@@ -268,7 +282,7 @@
             />Lorem ipsum dolor sit.</span
           >
           <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white"
+            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105"
           >
             Suscribe
           </div>
@@ -276,7 +290,7 @@
       </main>
       <!--END OF SECTION 4-->
     </main>
-    <!-- section 5 -->
+    <!-- section 6 -->
     <!-- footer -->
     <footer class="w-full h-[19vh] bg-yellow-300 flex relative lg:h-[40vh]">
       <section class="w-[57%] h-full p-2 lg:w-[55%] lg:flex flex-col lg:p-10">
@@ -306,7 +320,7 @@
               ><img
                 src="./images/Ezinne-love.png"
                 alt="love"
-                class="w-5 h-5 inline"
+                class="w-5 h-5 inline lg:hover:scale-110 lg:transition-all lg:hover:ease-linear"
             /></span>
             from Vince
           </p>
@@ -317,43 +331,32 @@
         <div class="h-full w-[25%] flex items-center justify-center">
           <img
             src="./images/Ezinne-facebook.png"
-            alt="facebook"
-            class="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer"
+            alt="facebook-icon"
+            class="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear"
           />
         </div>
         <div class="h-full w-[25%] flex items-center justify-center">
           <img
             src="./images/Ezinne-twitter.png"
-            alt="facebook"
-            class="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer"
+            alt="twitter-icon"
+            class="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear"
           />
         </div>
         <div class="h-full w-[25%] flex items-center justify-center">
           <img
             src="./images/Ezinne-linkedin.png"
-            alt="facebook"
-            class="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer"
+            alt="linkedin-icon"
+            class="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear"
           />
         </div>
         <div class="h-full w-[25%] flex items-center justify-center">
           <img
             src="./images/Ezinne-insta.png"
-            alt="facebook"
-            class="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer"
+            alt="instagram-icon"
+            class="w-4 h-4 lg:w-8 lg:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear"
           />
         </div>
       </section>
     </footer>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </body>
 </html>
