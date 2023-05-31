@@ -15,20 +15,23 @@
   <body class="bg-gray-900 text-white" style="font-family: 'Source Sans Pro'">
     <!-- Section 1 -->
     <header
-      class="w-full h-[10vh] flex items-center lg:h-[10vh] lg:border-b-2 border-gray-700 justify-evenly px-2 md:h-[10vh] md:justify-around md:px-12">
+      class="w-full h-[10vh] flex items-center justify-evenly px-2 md:h-[7vh] md:w-[87%] md:m-auto md:justify-between lg:w-[95%] lg:h-[10vh] 2xl:h-[10vh] 2xl:border-b-2 border-gray-700">
       <!-- logo -->
       <div
-        class="h-[50%] w-[11%] bg-yellow-300 rounded-full md lg:w-[4.5%] lg:h-[80%] lg:ml-10 cursor-pointer">
-        <img src="../src/images/Remix-logo.png" alt="remix-logo" class="" />
+        class="h-12 w-12 bg-yellow-300 rounded-full md:w-12 md:h-12 lg:w-[50px] lg:h-[50px] cursor-pointer">
+        <img
+          src="../src/images/Remix-logo.png"
+          alt="remix-logo"
+          class="flex items-center justify-center object-contain" />
       </div>
       <div
-        class="h-[50%] w-[20%] flex items-center justify-center font-bold lg:text-2xl lg:w-[10%] lg:mr-20 lg:pr-14 pr-5 md:mr-2 hover:text-yellow-300 transition-all ease-out hover:scale-110 cursor-pointer">
+        class="h-[50%] w-[20%] flex items-center justify-center font-bold md:w-fit md:mr-24 md:text-[23px] md:hidden lg:block lg:p-0 lg:m-0 lg:mr-32 lg:w-fit lg:h-fit 2xl:text-2xl 2xl:w-fit 2xl:pr-0 pr-5 hover:text-yellow-300 transition-all ease-out hover:scale-110 cursor-pointer">
         Remix
       </div>
 
       <!-- products and services:lg -->
       <div
-        class="lg:h-[50%] lg:w-[20%] justify-between lg:flex lg:mr-20 hidden lg:text-base">
+        class="lg:h-[50%] lg:w-[20%] justify-between lg:flex hidden lg:text-base">
         <span
           class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105"
           >Products</span
@@ -45,27 +48,26 @@
 
       <!-- dark and light mode -->
       <div
-        class="hidden lg:w-[18%] lg:h-[72%] lg:flex justify-around lg:mr-10 lg:ml-5 md:flex md:w-[27%] md:h-[50%] md:mr-14 lg:text-base">
+        class="hidden md:flex md:w-fit md:h-fit lg:text-base lg:w-[18%] lg:h-[72%] lg:flex justify-around">
         <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md md:p-1 cursor-pointer lg:hover:scale-105 transition-all ease-out"
-          ><img src="../src/images/Sun.png" alt="sun" / class=" h-[70%]
-          md:h-[50%] lg:mr-2 transition-all ease-out
-          hover:scale-105">Light</span
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md md:p-[6px] cursor-pointer lg:hover:scale-105 transition-all ease-out"
+          ><img src="../src/images/Sun.png" alt="sun" / class=" h-[70%] md:w-7
+          md:h-7 lg:mr-2 transition-all ease-out hover:scale-105">Light</span
         >
         <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700 md:p-1 cursor-pointer lg:hover:bg-gray-900 lg:hover:scale-105 transition-all ease-out"
-          ><img src="../src/images/Moon.png" alt="sun" / class=" h-[80%]
-          md:h-[50%] mr-2 transition-all ease-out hover:scale-105">Dark</span
+          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700 md:p-[6px] cursor-pointer lg:hover:bg-gray-900 lg:hover:scale-105 transition-all ease-out"
+          ><img src="../src/images/Moon.png" alt="sun" / class=" h-[80%] md:h-7
+          md:w-7 mr-2 transition-all ease-out hover:scale-105">Dark</span
         >
       </div>
 
       <!-- sign in and 'get figma' -->
       <div
-        class="h-[55%] borderlight font-bold text-[14px] flex items-center justify-center p-3 lg:h-[70%] lg:w-[8%] lg:ml-10 lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer md:mr-20 md:w-[17%] md:h-[50%] lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105 lg:text-base">
+        class="h-[55%] borderlight font-bold text-[14px] flex items-center justify-center p-3 md:w-fit md:h-fit md:px-6 lg:h-[70%] lg:w-fit lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105 lg:text-base base border">
         Sign in
       </div>
       <div
-        class="h-[55%] font-bold text-[14px] flex items-center justify-center p-2 bg-yellow-300 text-black rounded-md lg:h-[70%] lg:w-[12%] lg:ml-10 lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105 lg:text-base">
+        class="h-[55%] font-bold text-[14px] flex items-center justify-center p-2 bg-yellow-300 text-black rounded-md md:h-fit md:w-fit md:p-3 md:px-4 lg:h-[70%] lg:w-fit lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105 lg:text-base">
         Get Figma Plugin
       </div>
     </header>
@@ -79,17 +81,25 @@
 
     <!-- section 2 -->
     <!-- descriptional headings -->
-    <main class="lg:flex flex-row-reverse lg:h-[81vh]">
+    <main class="lg:w-full lg:flex 2xl:flex flex-row-reverse 2xl:h-[81vh]">
       <!-- body image -->
       <section
-        class="m-auto rounded-md lg:w-[50%] lg:h-full my-3 lg:mt-0 lg:pt-7 lg:mr-9">
-        <img src="../src/images/remix-bg.png" alt="background-img" />
+        class="m-auto rounded-md md:w-[75%] lg:w-[45%] lg:h-[100%] my-3 lg:m-auto">
+        <img src="../src/images/remix-bg.png" alt="bgImage" class="lg:hidden" />
+        <div
+          class="hidden lg:block w-[500px] h-[500px] m-auto 2xl:hidden"
+          style="
+            background: url(./images/remix-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+          "></div>
       </section>
       <!-- heading & paragraph -->
       <section
-        class="mt-3 lg:pl-5 lg:w-[50%] lg:flex flex-col justify-center lg:p-10 lg:ml-[50px]">
+        class="mt-3 md:w-[75%] md:m-auto lg:w-[55%] lg:pl-5 2xl:w-[50%] lg:flex flex-col justify-center lg:p-10 lg:ml-[40px]">
         <h2
-          class="w-100 text-2xl font-bold p-5 font-mono lg:text-5xl lg:flex lg:tracking-widest lg:p-4"
+          class="w-100 text-2xl font-bold p-5 font-mono md:text-3xl lg:text-4xl 2xl:text-5xl lg:flex lg:tracking-widest lg:p-4"
           style="font-family: 'Josefin Sans'">
           Developer hand-off has never been easier.
         </h2>
@@ -101,7 +111,7 @@
           ea.
         </p>
         <div
-          class="w-[40%] text-sm flex items-center justify-center m-auto p-3 rounded-md bg-yellow-300 text-black font-bold mb-7 lg:w-[40%] lg:p-[18px] lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
+          class="w-[40%] text-sm flex items-center justify-center m-auto p-3 rounded-md bg-yellow-300 text-black font-bold mb-7 lg:w-fit lg:p-[18px] lg:py-[14px] lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
           Get Figma Plugin
         </div>
       </section>
