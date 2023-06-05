@@ -1050,6 +1050,10 @@ video {
     margin: auto;
   }
 
+  .md\:m-0 {
+    margin: 0px;
+  }
+
   .md\:mr-24 {
     margin-right: 6rem;
   }
@@ -1068,6 +1072,10 @@ video {
 
   .md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
@@ -1123,6 +1131,18 @@ video {
     height: 250px;
   }
 
+  .md\:h-\[21vh\] {
+    height: 21vh;
+  }
+
+  .md\:h-\[20vh\] {
+    height: 20vh;
+  }
+
+  .md\:h-6 {
+    height: 1.5rem;
+  }
+
   .md\:w-12 {
     width: 3rem;
   }
@@ -1160,6 +1180,14 @@ video {
     width: 80%;
   }
 
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
+  .md\:w-6 {
+    width: 1.5rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1174,6 +1202,10 @@ video {
 
   .md\:p-\[6px\] {
     padding: 6px;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
   }
 
   .md\:px-4 {
@@ -1226,6 +1258,29 @@ video {
 
   .md\:text-\[23px\] {
     font-size: 23px;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .md\:text-\[15px\] {
+    font-size: 15px;
   }
 }
 
