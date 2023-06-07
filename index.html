@@ -1,425 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Remix</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Source+Sans+Pro:wght@300&display=swap"
-      rel="stylesheet" />
-    <link href="/dist/output.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-900 text-white" style="font-family: 'Source Sans Pro'">
-    <!-- Section 1 -->
-    <header
-      class="w-full h-[10vh] flex items-center justify-evenly px-2 md:h-[7vh] md:w-[87%] md:m-auto md:justify-between lg:w-[95%] lg:h-[10vh] 2xl:h-[10vh] 2xl:border-b-2 border-gray-700">
-      <!-- logo -->
-      <div
-        class="h-12 w-12 bg-yellow-300 rounded-full md:w-12 md:h-12 lg:w-[50px] lg:h-[50px] cursor-pointer">
-        <img
-          src="../src/images/Remix-logo.png"
-          alt="remix-logo"
-          class="flex items-center justify-center object-contain" />
-      </div>
-      <div
-        class="h-[50%] w-[20%] flex items-center justify-center font-bold md:w-fit md:mr-24 md:text-[23px] md:hidden lg:block lg:p-0 lg:m-0 lg:mr-32 lg:w-fit lg:h-fit 2xl:text-2xl 2xl:w-fit 2xl:pr-0 pr-5 hover:text-yellow-300 transition-all ease-out hover:scale-110 cursor-pointer">
-        Remix
-      </div>
 
-      <!-- products and services:lg -->
-      <div
-        class="lg:h-[50%] lg:w-[20%] justify-between lg:flex hidden lg:text-base">
-        <span
-          class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105"
-          >Products</span
-        >
-        <span
-          class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105"
-          >Pricing</span
-        >
-        <span
-          class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105"
-          >Search</span
-        >
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Source+Sans+Pro:wght@300&display=swap"
+    rel="stylesheet" />
+  <link href="/dist/output.css" rel="stylesheet" />
+</head>
 
-      <!-- dark and light mode -->
-      <div
-        class="hidden md:flex md:w-fit md:h-fit lg:text-base lg:w-[18%] lg:h-[72%] lg:flex justify-around">
-        <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md md:p-[6px] cursor-pointer lg:hover:scale-105 transition-all ease-out"
-          ><img src="../src/images/Sun.png" alt="sun" / class=" h-[70%] md:w-7
-          md:h-7 lg:mr-2 transition-all ease-out hover:scale-105">Light</span
-        >
-        <span
-          class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700 md:p-[6px] cursor-pointer lg:hover:bg-gray-900 lg:hover:scale-105 transition-all ease-out"
-          ><img src="../src/images/Moon.png" alt="sun" / class=" h-[80%] md:h-7
-          md:w-7 mr-2 transition-all ease-out hover:scale-105">Dark</span
-        >
-      </div>
-
-      <!-- sign in and 'get figma' -->
-      <div
-        class="h-[55%] borderlight font-bold text-[14px] flex items-center justify-center p-3 md:w-fit md:h-fit md:px-6 lg:h-[70%] lg:w-fit lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105 lg:text-base border">
-        Sign in
-      </div>
-      <div
-        class="h-[55%] font-bold text-[14px] flex items-center justify-center p-2 bg-yellow-300 text-black rounded-md md:h-fit md:w-fit md:p-3 md:px-4 lg:h-[70%] lg:w-fit lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105 lg:text-base">
-        Get Figma Plugin
-      </div>
-    </header>
-
-    <!-- products and services:sm -->
-    <div class="h-[15vh] w-[50%] justify-between lg:hidden md:hidden">
-      <span class="h-1/3 flex items-center font-bold pl-4">Products</span>
-      <span class="h-1/3 flex items-center font-bold pl-4">Pricing</span>
-      <span class="h-1/3 flex items-center font-bold pl-4">Search</span>
+<body class="bg-gray-900 text-white" style="font-family: 'Source Sans Pro'">
+  <!-- Section 1 -->
+  <header
+    class="w-full h-[10vh] flex items-center justify-evenly px-2 md:h-[7vh] md:w-[87%] md:m-auto md:justify-between lg:w-[95%] lg:h-[10vh] 2xl:h-[10vh] 2xl:border-b-2 border-gray-700">
+    <!-- logo -->
+    <div class="h-12 w-12 bg-yellow-300 rounded-full md:w-12 md:h-12 lg:w-[50px] lg:h-[50px] cursor-pointer">
+      <img src="../src/images/Remix-logo.png" alt="remix-logo"
+        class="flex items-center justify-center object-contain" />
+    </div>
+    <div
+      class="h-[50%] w-[20%] flex items-center justify-center font-bold md:w-fit md:mr-24 md:text-[23px] md:hidden lg:block lg:p-0 lg:m-0 lg:mr-32 lg:w-fit lg:h-fit 2xl:text-2xl 2xl:w-fit 2xl:pr-0 pr-5 hover:text-yellow-300 transition-all ease-out hover:scale-110 cursor-pointer">
+      Remix
     </div>
 
-    <!-- section 2 -->
-    <!-- descriptional headings -->
-    <main class="lg:w-full lg:flex 2xl:flex flex-row-reverse 2xl:h-[83vh]">
-      <!-- body image -->
+    <!-- products and services:lg -->
+    <div class="lg:h-[50%] lg:w-[20%] justify-between lg:flex hidden lg:text-base">
+      <span
+        class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105">Products</span>
+      <span
+        class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105">Pricing</span>
+      <span
+        class="h-full flex items-center font-bold cursor-pointer hover:text-yellow-300 transition-all ease-out hover:scale-105">Search</span>
+    </div>
+
+    <!-- dark and light mode -->
+    <div class="hidden md:flex md:w-fit md:h-fit lg:text-base lg:w-[18%] lg:h-[72%] lg:flex justify-around">
+      <span
+        class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-l-md md:p-[6px] cursor-pointer lg:hover:scale-105 transition-all ease-out"><img
+          src="../src/images/Sun.png" alt="sun" / class=" h-[70%] md:w-7
+          md:h-7 lg:mr-2 transition-all ease-out hover:scale-105">Light</span>
+      <span
+        class="h-full w-1/2 borderlight flex items-center justify-center font-bold rounded-r-md bg-gray-700 md:p-[6px] cursor-pointer lg:hover:bg-gray-900 lg:hover:scale-105 transition-all ease-out"><img
+          src="../src/images/Moon.png" alt="sun" / class=" h-[80%] md:h-7
+          md:w-7 mr-2 transition-all ease-out hover:scale-105">Dark</span>
+    </div>
+
+    <!-- sign in and 'get figma' -->
+    <div
+      class="h-[55%] borderlight font-bold text-[14px] flex items-center justify-center p-3 md:w-fit md:h-fit md:px-6 lg:h-[70%] lg:w-fit lg:mr-5 rounded-md bg-gray-500 lg:hover:bg-gray-700 lg:hover:text-white lg:hover:border-none cursor-pointer lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105 lg:text-base border">
+      Sign in
+    </div>
+    <div
+      class="h-[55%] font-bold text-[14px] flex items-center justify-center p-2 bg-yellow-300 text-black rounded-md md:h-fit md:w-fit md:p-3 md:px-4 lg:h-[70%] lg:w-fit lg:hover:bg-gray-700 lg:hover:text-white cursor-pointer lg:transition-all lg:ease-linear transition-all ease-out hover:scale-105 lg:text-base">
+      Get Figma Plugin
+    </div>
+  </header>
+
+  <!-- products and services:sm -->
+  <div class="h-[15vh] w-[50%] justify-between lg:hidden md:hidden">
+    <span class="h-1/3 flex items-center font-bold pl-4">Products</span>
+    <span class="h-1/3 flex items-center font-bold pl-4">Pricing</span>
+    <span class="h-1/3 flex items-center font-bold pl-4">Search</span>
+  </div>
+
+  <!-- section 2 -->
+  <!-- descriptional headings -->
+  <main class="lg:w-full lg:flex 2xl:flex flex-row-reverse 2xl:h-[83vh]">
+    <!-- body image -->
+    <section class="m-auto rounded-md md:w-[75%] lg:w-[45%] lg:h-[100%] my-3 lg:m-auto">
+      <img src="../src/images/remix-bg.png" alt="bgImage" class="lg:hidden" />
+      <div class="hidden w-full h-[500px] m-auto 2xl:w-full 2xl:h-full lg:flex items-center"><img src="./images/"
+          alt="backgroundgImg" class="bg-cover w-fit h-fit"></div>
+    </section>
+    <!-- heading & paragraph -->
+    <section
+      class="mt-3 md:w-[75%] md:m-auto lg:w-[55%] lg:pl-5 2xl:w-[50%] lg:flex flex-col justify-center lg:p-10 lg:ml-[40px]">
+      <h2
+        class="w-100 text-2xl font-bold p-5 font-mono md:text-3xl lg:text-4xl 2xl:text-5xl lg:flex lg:tracking-widest lg:p-4"
+        style="font-family: 'Josefin Sans'">
+        Developer hand-off has never been easier.
+      </h2>
+      <p class="w-[100%] text-xs px-5 mb-7 text-gray-300 lg:text-sm lg:p-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod odio nam
+        hic unde perferendis facere dignissimos laborum, ducimus ea, sunt illo
+        in officiis nobis aliquid voluptate nemo nostrum. Doloremque, omnis.
+        Quod odio nam hic unde perferendis facere dignissimos laborum, ducimus
+        ea.
+      </p>
+      <div
+        class="w-[40%] text-sm flex items-center justify-center m-auto p-3 rounded-md bg-yellow-300 text-black font-bold mb-7 lg:w-fit lg:p-[18px] lg:py-[14px] lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
+        Get Figma Plugin
+      </div>
+    </section>
+  </main>
+
+  <!-- section 3 -->
+  <!-- services -->
+  <main class="w-full flex flex-col 2xl:flex-row">
+
+    <!-- 1st & 2nd wrapper -->
+    <div class="w-full h-fit flex flex-col md:flex-row md:px-4 lg:px-0 lg:justify-between">
+      <!-- 1st -->
       <section
-        class="m-auto rounded-md md:w-[75%] lg:w-[45%] lg:h-[100%] my-3 lg:m-auto">
-        <img src="../src/images/" alt="bgImage" class="lg:hidden" />
-        <div
-          class="hidden w-full h-[500px] m-auto 2xl:w-full 2xl:h-full lg:flex items-center"
-          ><img src="./images/remix-bg.png" alt="backgroundgImg" class="bg-cover w-fit h-fit"></div>
+        class="w-full  flex flex-col p-3 px-8 lg:w-1/2 lg:px-24 lg:pb-7 2xl:px-0 hover:scale-105 transition-all ease-linear"
+        style="background-color: rgba(43, 57, 77, 0.604);">
+        <span class="w-full  py-2 mb-2 font-bold text-lg md:flex items-center justify-center">Convert with
+          Automations</span>
+        <span class="w-full h-[30vh] block md:h-[25vh] lg:h-[45vh] 2xl:h-[57vh]"
+          style="background: url(../src/images/body-image.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></span>
+        <span class="w-full  py-2 my-2 text-sm md:flex justify-center 2xl:px-4 2xl:text-base">Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Possimus deleniti molestiae blanditiis.</span>
+        <span
+          class="w-[40%] p-2 py-3 rounded-md flex items-center justify-center text-sm mt-2 bg-yellow-300 text-black font-bold tracking-wide md:m-auto 2xl:text-base 2xl:py-2 hover hover:bg-gray-700 hover:text-white transition-all ease-linear cursor-pointer hover:scale-105">Learn
+          More</span>
       </section>
-      <!-- heading & paragraph -->
+
+      <!-- 2nd -->
       <section
-        class="mt-3 md:w-[75%] md:m-auto lg:w-[55%] lg:pl-5 2xl:w-[50%] lg:flex flex-col justify-center lg:p-10 lg:ml-[40px]">
-        <h2
-          class="w-100 text-2xl font-bold p-5 font-mono md:text-3xl lg:text-4xl 2xl:text-5xl lg:flex lg:tracking-widest lg:p-4"
-          style="font-family: 'Josefin Sans'">
-          Developer hand-off has never been easier.
-        </h2>
-        <p class="w-[100%] text-xs px-5 mb-7 text-gray-300 lg:text-sm lg:p-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod odio nam
-          hic unde perferendis facere dignissimos laborum, ducimus ea, sunt illo
-          in officiis nobis aliquid voluptate nemo nostrum. Doloremque, omnis.
-          Quod odio nam hic unde perferendis facere dignissimos laborum, ducimus
-          ea.
-        </p>
-        <div
-          class="w-[40%] text-sm flex items-center justify-center m-auto p-3 rounded-md bg-yellow-300 text-black font-bold mb-7 lg:w-fit lg:p-[18px] lg:py-[14px] lg:m-0 lg:ml-4 lg:text-base cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
-          Get Figma Plugin
+        class="w-full  flex flex-col p-3 px-8 bg-gray-800 lg:w-1/2 lg:px-24 lg:pb-7 2xl:px-0 hover:scale-105 transition-all ease-linear">
+        <span class="w-full  py-2 mb-2 font-bold text-lg md:flex items-center justify-center">Scale with AI &
+          Analytics</span>
+        <span class="w-full h-[30vh] block md:h-[25vh] lg:h-[45vh] 2xl:h-[57vh]"
+          style="background: url(../src/images/body-image.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></span>
+        <span class="w-full  py-2 my-2 text-sm 2xl:px-4 2xl:text-base">Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Possimus deleniti molestiae blanditiis.</span>
+        <span
+          class="w-[40%] p-2 py-3 rounded-md flex items-center justify-center text-sm mt-2 bg-yellow-300 text-black tracking-wide font-bold md:m-auto 2xl:text-base 2xl:py-2 hover:bg-gray-700 hover:text-white transition-all ease-linear cursor-pointer hover:scale-105">Learn
+          More</span>
+      </section>
+    </div>
+
+    <!-- wrapper for 3rd & 4th -->
+    <div class="w-full h-fit flex flex-col md:flex-row-reverse md:px-4 lg:justify-around lg:px-0">
+      <!-- 3rd -->
+      <section
+        class="w-full  flex flex-col bg-gray-800 p-3 px-8 lg:w-1/2 lg:pb-7 lg:px-24 2xl:px-0 hover:scale-105 transition-all ease-linear">
+        <span class="w-full  py-2 mb-2  font-bold text-lg md:flex items-center justify-center">Target with
+          Segmentation</span>
+        <span class="w-full h-[30vh] block md:h-[25vh] lg:h-[45vh] 2xl:h-[57vh]"
+          style="background: url(../src/images/body-image.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></span>
+        <span class="w-full  py-2 my-2 text-sm 2xl:px-4 2xl:text-base">Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Possimus deleniti molestiae blanditiis.</span>
+        <span
+          class="w-[40%] p-2 py-3 rounded-md flex items-center justify-center text-sm mt-2 bg-yellow-300 text-black tracking-wide font-bold md:m-auto 2xl:text-base 2xl:py-2 hover:bg-gray-700 hover:text-white transition-all ease-linear cursor-pointer hover:scale-105">Learn
+          More</span>
+      </section>
+
+      <!-- 4th -->
+      <section
+        class="w-full  flex flex-col bg-gray-900 p-3 px-8 lg:w-1/2 lg:pb-7 lg:px-24 2xl:px-0 hover:scale-105 transition-all ease-linear">
+        <span class="w-full  py-2 mb-2 font-bold text-lg md:flex items-center justify-center">Sync with
+          Integrations</span>
+        <span class="w-full h-[30vh] block md:h-[25vh] lg:h-[45vh] 2xl:h-[57vh]"
+          style="background: url(../src/images/body-image.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></span>
+        <span class="w-full  p-2 my-2 text-sm 2xl:px-4 2xl:text-base">Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Possimus deleniti molestiae blanditiis.</span>
+        <span
+          class="w-[40%] p-2 py-3 rounded-md flex items-center justify-center text-sm mt-2 bg-yellow-300 text-black tracking-wide font-bold md:m-auto 2xl:text-base 2xl:py-2 hover:bg-gray-700 hover:text-white transition-all ease-linear cursor-pointer hover:scale-105">Learn
+          More</span>
+      </section>
+    </div>
+  </main>
+
+  <!-- section 4 -->
+  <!-- more services -->
+  <main class="w-full">
+    <section class="w-full h-fit">
+      <div
+        class="w-full text-xl text-center p-3 pt-10 font-bold md:text-2xl md:w-[78%] md:m-auto md:pt-14 lg:w-[55%] lg:pb-7 2xl:text-3xl 2xl:w-[50%] 2xl:my-10"
+        style="font-family: 'Josefin Sans'">Generate up to 4x more orders* with Customer Journey Builder automations
+      </div>
+      <!-- wrapper for 1st vid & convert... -->
+      <div class="w-full lg:flex items-center lg:mb-2 lg:w-[93%] lg:m-auto 2xl:mb-10">
+        <!-- 1st vid -->
+        <div class="w-[80%] h-[30vh] borderlight m-auto md:w-[60%] md:mt-12 lg:mt-0 lg:h-[50vh] lg:w-[65%] 2xl:w-[40%]">
         </div>
-      </section>
-    </main>
-    
-    <!-- section 3 -->
-    <!-- services -->
-    <main class="w-full flex flex-col 2xl:flex-row">
-      
-      <!-- 1st & 2nd wrapper -->
-      <div class="w-full h-fit flex flex-col md:flex-row md:px-4 lg:px-0 lg:justify-between">
-        <!-- 1st -->
-        <section class="w-full  flex flex-col p-3 px-8 lg:w-1/2 lg:px-24 lg:pb-7 2xl:px-0 hover:scale-105 transition-all ease-linear" style="background-color: rgba(43, 57, 77, 0.604);">
-          <span class="w-full  py-2 mb-2 font-bold text-lg md:flex items-center justify-center">Convert with Automations</span>
-          <span class="w-full h-[30vh] block md:h-[25vh] lg:h-[45vh] 2xl:h-[57vh]" style="background: url(../src/images/body-image.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></span>
-          <span class="w-full  py-2 my-2 text-sm md:flex justify-center 2xl:px-4 2xl:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus deleniti molestiae blanditiis.</span>
-          <span class="w-[40%] p-2 py-3 rounded-md flex items-center justify-center text-sm mt-2 bg-yellow-300 text-black font-bold tracking-wide md:m-auto 2xl:text-base 2xl:py-2 hover hover:bg-gray-700 hover:text-white transition-all ease-linear cursor-pointer hover:scale-105">Learn More</span>
-        </section>
-        
-        <!-- 2nd -->
-        <section class="w-full  flex flex-col p-3 px-8 bg-gray-800 lg:w-1/2 lg:px-24 lg:pb-7 2xl:px-0 hover:scale-105 transition-all ease-linear">
-          <span class="w-full  py-2 mb-2 font-bold text-lg md:flex items-center justify-center">Scale with AI & Analytics</span>
-          <span class="w-full h-[30vh] block md:h-[25vh] lg:h-[45vh] 2xl:h-[57vh]" style="background: url(../src/images/body-image.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></span>
-          <span class="w-full  py-2 my-2 text-sm 2xl:px-4 2xl:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus deleniti molestiae blanditiis.</span>
-          <span class="w-[40%] p-2 py-3 rounded-md flex items-center justify-center text-sm mt-2 bg-yellow-300 text-black tracking-wide font-bold md:m-auto 2xl:text-base 2xl:py-2 hover:bg-gray-700 hover:text-white transition-all ease-linear cursor-pointer hover:scale-105">Learn More</span>
-        </section>
-      </div>
-
-      <!-- wrapper for 3rd & 4th -->
-      <div class="w-full h-fit flex flex-col md:flex-row-reverse md:px-4 lg:justify-around lg:px-0">
-        <!-- 3rd -->
-        <section class="w-full  flex flex-col bg-gray-800 p-3 px-8 lg:w-1/2 lg:pb-7 lg:px-24 2xl:px-0 hover:scale-105 transition-all ease-linear">
-          <span class="w-full  py-2 mb-2  font-bold text-lg md:flex items-center justify-center">Target with Segmentation</span>
-          <span class="w-full h-[30vh] block md:h-[25vh] lg:h-[45vh] 2xl:h-[57vh]" style="background: url(../src/images/body-image.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></span>
-          <span class="w-full  py-2 my-2 text-sm 2xl:px-4 2xl:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus deleniti molestiae blanditiis.</span>
-          <span class="w-[40%] p-2 py-3 rounded-md flex items-center justify-center text-sm mt-2 bg-yellow-300 text-black tracking-wide font-bold md:m-auto 2xl:text-base 2xl:py-2 hover:bg-gray-700 hover:text-white transition-all ease-linear cursor-pointer hover:scale-105">Learn More</span>
-        </section>
-        
-        <!-- 4th -->
-        <section class="w-full  flex flex-col bg-gray-900 p-3 px-8 lg:w-1/2 lg:pb-7 lg:px-24 2xl:px-0 hover:scale-105 transition-all ease-linear">
-          <span class="w-full  py-2 mb-2 font-bold text-lg md:flex items-center justify-center">Sync with Integrations</span>
-          <span class="w-full h-[30vh] block md:h-[25vh] lg:h-[45vh] 2xl:h-[57vh]" style="background: url(../src/images/body-image.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></span>
-          <span class="w-full  p-2 my-2 text-sm 2xl:px-4 2xl:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus deleniti molestiae blanditiis.</span>
-          <span class="w-[40%] p-2 py-3 rounded-md flex items-center justify-center text-sm mt-2 bg-yellow-300 text-black tracking-wide font-bold md:m-auto 2xl:text-base 2xl:py-2 hover:bg-gray-700 hover:text-white transition-all ease-linear cursor-pointer hover:scale-105">Learn More</span>
-        </section>
-      </div>
-    </main>
-
-    <!-- section 4 -->
-    <!-- more services -->
-    <main class="w-full">
-      <section class="w-full h-fit">
-        <div class="w-full text-xl text-center p-3 pt-10 font-bold md:text-2xl md:w-[78%] md:m-auto md:pt-14 lg:w-[55%] lg:pb-7 2xl:text-3xl 2xl:w-[50%] 2xl:my-10" style="font-family: 'Josefin Sans'">Generate up to 4x more orders* with Customer Journey Builder automations</div>
-        <!-- wrapper for 1st vid & convert... -->
-        <div class="w-full lg:flex items-center lg:mb-2 lg:w-[93%] lg:m-auto 2xl:mb-10">
-          <!-- 1st vid -->
-          <div class="w-[80%] h-[30vh] borderlight m-auto md:w-[60%] md:mt-12 lg:mt-0 lg:h-[50vh] lg:w-[65%] 2xl:w-[40%]"></div>
-          <!-- convert... -->
-          <div class="w-full h-fit p-3 px-4 mt-5 text-lg flex flex-col items-center justify-center md:w-[80%] md:m-auto md:mt-5 lg:my-auto lg:w-[65%] 2xl:w-[45%]">
-            <span class="w-full block font-bold md:text-center md:text-xl 2xl:text-2xl 2xl:mb-3">Convert more customers at scale</span>
-          <span class="w-full mt-2 md:text-base 2xl:text-lg">Drive more traffic and sales by setting up automations that trigger emails based on customer behavior with our Customer Journey Builder.</span>
+        <!-- convert... -->
+        <div
+          class="w-full h-fit p-3 px-4 mt-5 text-lg flex flex-col items-center justify-center md:w-[80%] md:m-auto md:mt-5 lg:my-auto lg:w-[65%] 2xl:w-[45%]">
+          <span class="w-full block font-bold md:text-center md:text-xl 2xl:text-2xl 2xl:mb-3">Convert more customers at
+            scale</span>
+          <span class="w-full mt-2 md:text-base 2xl:text-lg">Drive more traffic and sales by setting up automations that
+            trigger emails based on customer behavior with our Customer Journey Builder.</span>
         </div>
       </div>
       <!-- wrapper for 2nd vid & discover... -->
       <div class="w-full lg:flex items-center lg:mb-2 lg:w-[93%] lg:m-auto 2xl:mb-10">
         <!-- 2nd vid -->
-        <div class="w-[80%] h-[30vh] borderlight m-auto mt-8 md:w-[60%] lg:mt-0 lg:h-[50vh] lg:w-[65%] 2xl:w-[40%]"></div>
+        <div class="w-[80%] h-[30vh] borderlight m-auto mt-8 md:w-[60%] lg:mt-0 lg:h-[50vh] lg:w-[65%] 2xl:w-[40%]">
+        </div>
         <!-- discover... -->
-        <div class="w-full h-fit p-3 px-4 mt-5 text-lg flex flex-col items-center justify-center md:w-[80%] md:m-auto md:mt-5 lg:my-auto lg:w-[65%] 2xl:w-[45%]">
-          <span class="w-full block font-bold md:text-center md:text-xl 2xl:text-2xl 2xl:mb-3">Discover new ways to automate</span>
-          <span class="w-full mt-2 2xl:text-lg">Get a head start with pre-built journeys that help you cross-sell your products, recover abandoned carts, re-engage existing customers, and win new ones.</span>
+        <div
+          class="w-full h-fit p-3 px-4 mt-5 text-lg flex flex-col items-center justify-center md:w-[80%] md:m-auto md:mt-5 lg:my-auto lg:w-[65%] 2xl:w-[45%]">
+          <span class="w-full block font-bold md:text-center md:text-xl 2xl:text-2xl 2xl:mb-3">Discover new ways to
+            automate</span>
+          <span class="w-full mt-2 2xl:text-lg">Get a head start with pre-built journeys that help you cross-sell your
+            products, recover abandoned carts, re-engage existing customers, and win new ones.</span>
         </div>
       </div>
       <!-- wrapper for 3rd vid & keep your email... -->
       <div class="w-full lg:flex  items-center lg:mb-2 lg:w-[93%] lg:m-auto 2xl:mb-10">
 
         <!-- 3rd vid -->
-        <div class="w-[80%] h-[30vh] borderlight m-auto mt-8 md:w-[60%] lg:mt-0 lg:h-[50vh] lg:w-[65%] 2xl:w-[40%]"></div>
+        <div class="w-[80%] h-[30vh] borderlight m-auto mt-8 md:w-[60%] lg:mt-0 lg:h-[50vh] lg:w-[65%] 2xl:w-[40%]">
+        </div>
         <!-- keep your email... -->
-        <div class="w-full h-fit p-3 px-4 mt-5 text-lg flex flex-col items-center justify-center md:w-[80%] md:m-auto md:mt-5 lg:my-auto lg:w-[65%] 2xl:w-[45%]">
-          <span class="w-full block font-bold md:text-center md:text-xl 2xl:text-2xl 2xl:mb-3">Keep your emails relevant and your brand growing</span>
-          <span class="w-full mt-2 2xl:text-lg">Deliver personalized emails based on their buying behavior, survey responses, chat interactions, and support tickets to promote loyalty and growth.</span>
+        <div
+          class="w-full h-fit p-3 px-4 mt-5 text-lg flex flex-col items-center justify-center md:w-[80%] md:m-auto md:mt-5 lg:my-auto lg:w-[65%] 2xl:w-[45%]">
+          <span class="w-full block font-bold md:text-center md:text-xl 2xl:text-2xl 2xl:mb-3">Keep your emails relevant
+            and your brand growing</span>
+          <span class="w-full mt-2 2xl:text-lg">Deliver personalized emails based on their buying behavior, survey
+            responses, chat interactions, and support tickets to promote loyalty and growth.</span>
         </div>
       </div>
+    </section>
+  </main>
+
+  <!-- section 5 & 6 -->
+  <!-- price tags and email suscription -->
+  <main class="flex flex-col-reverse lg:pt-7">
+    <!-- section 5 -->
+    <!-- sign-up -->
+    <main
+      class="w-full p-3 bg-gray-800 text-gray-200 md:h-fit md:m-auto md:pb-10 lg:p-0 lg:flex flex-row-reverse 2xl:h-fit 2xl:w-full">
+      <!-- signup-image -->
+      <!-- <section class="w-1/2 borderlight h-full"></section> -->
+      <section class="md:px-14 lg:block h-full lg:w-1/2 lg:px-10 2xl:pt-10">
+        <h2
+          class="font-bold font-mono text-xl p-3 text-white md:mt-10 md:mb-4 lg:text-3xl lg:w-full 2xl:text-3xl 2xl:px-10 "
+          style="font-family: 'Josefin Sans'">
+          Get the Ultimate Developer Hand Off Guide
+        </h2>
+        <p class="text-xs px-3 md:mb-5 lg:w-full lg:text-sm 2xl:px-10 2xl:pt-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+          ad repellendus dignissimos ullam quam corrupti nisi accusamus
+          mollitia.
+        </p>
+        <p class="hidden lg:block text-xs px-3 lg:w-full lg:text-sm 2xl:px-10 lg:pb-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+          accusantium iure, dolor vitae officiis eaque ducimus sunt. Et
+          consectetur hic dignissimos quaerat saepe dolore blanditiis
+          inventore in nostrum vel? Dolorum, cupiditate non ducimus debitis
+          quisquam voluptate eveniet fugiat dolore a.
+        </p>
+        <div
+          class="w-full h-14 flex mt-3 ml-3 md:mb-10 2xl:w-full  lg:ml-0 lg:h-12 lg:px-2 items-center mb-4 2xl:px-10">
+          <div class="h-[70%] w-[55%] rounded-md lg:h-[90%]">
+            <input type="email" name="email" id="email"
+              class="h-full w-full text-sm pl-4 rounded-md outline-none lg:text-base text-black"
+              placeholder="Enter email address" />
+          </div>
+          <button
+            class="p-3 w-[40%] text-sm font-bold flex items-center justify-center bg-yellow-300 rounded-md text-black ml-2 cursor-pointer lg:text-base lg:outline-none lg:rounded-md lg:ml-5 lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">Send
+            Guide
+          </button>
+        </div>
       </section>
+      <section class="w-1/2 hidden lg:block"></section>
     </main>
 
-    <!-- section 5 & 6 -->
-    <!-- price tags and email suscription -->
-    <main class="flex flex-col-reverse lg:pt-7">
-      <!-- section 4 -->
-      <!-- sign-up -->
-      <main
-        class="w-full p-3 bg-gray-800 text-gray-200 md:h-fit md:m-auto md:pb-10 lg:p-0 lg:flex flex-row-reverse 2xl:h-fit 2xl:w-full">
-        <!-- signup-image -->
-        <!-- <section class="w-1/2 borderlight h-full"></section> -->
-        <section class="md:px-14 lg:block h-full lg:w-1/2 lg:px-10 2xl:pt-10">
-          <h2
-            class="font-bold font-mono text-xl p-3 text-white md:mt-10 md:mb-4 lg:text-3xl lg:w-full 2xl:text-3xl 2xl:px-10 "
-            style="font-family: 'Josefin Sans'">
-            Get the Ultimate Developer Hand Off Guide
-          </h2>
-          <p class="text-xs px-3 md:mb-5 lg:w-full lg:text-sm 2xl:px-10 2xl:pt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-            ad repellendus dignissimos ullam quam corrupti nisi accusamus
-            mollitia.
-          </p>
-          <p
-            class="hidden lg:block text-xs px-3 lg:w-full lg:text-sm 2xl:px-10 lg:pb-5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-            accusantium iure, dolor vitae officiis eaque ducimus sunt. Et
-            consectetur hic dignissimos quaerat saepe dolore blanditiis
-            inventore in nostrum vel? Dolorum, cupiditate non ducimus debitis
-            quisquam voluptate eveniet fugiat dolore a.
-          </p>
-          <div
-            class="w-full h-14 flex mt-3 ml-3 md:mb-10 2xl:w-full  lg:ml-0 lg:h-12 lg:px-2 items-center mb-4 2xl:px-10">
-            <div class="h-[70%] w-[55%] rounded-md lg:h-[90%]">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="h-full w-full text-sm pl-4 rounded-md outline-none lg:text-base text-black"
-                placeholder="Enter email address" />
+    <!-- section 6 -->
+    <!-- price tags -->
+    <main
+      class="w-full flex flex-col items-center my-6 md:flex-row md:justify-between px-5 lg:flex-row lg:my-0 lg:py-7 lg:px-10">
+      <!-- REMEMBER TO ADD SWIPER-JS TO THIS FOR SMALL SCREENS -->
+      <div
+        class="w-[65%] border-2 border-gray-700 md:w-[31%] p-3 rounded-md lg:w-[29%] lg:h-[50%] lg:rounded-md mb-8 py-10  lg:hover:scale-105 lg:transition-all lg:ease-linear lg:px-5 2xl:w-[22%] 2xl:mx-20 2xl:h-[75%]">
+        <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
+        <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
+          $39 <sub class="text-sm">/mo</sub>
+        </h2>
+        <p class="text-xs pb-5 lg:mb-2">
+          Lorem ipsum dolor sit amet consec adipisicing elit. Asperiores,
+          tempore.
+        </p>
+        <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <span class="text-xs flex items-center pb-5 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <div
+          class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
+          Suscribe
+        </div>
+      </div>
+      <div
+        class="w-[65%] border-2 border-gray-700 md:w-[31%]  p-3 rounded-md lg:rounded-md mb-8 py-10 bg-gray-800 lg:w-[29%] lg:h-[50%]  lg:hover:scale-105 lg:transition-all lg:ease-linear lg:px-5 2xl:w-[22%] 2xl:mx-20 2xl:h-[75%]">
+        <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
+        <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
+          $59 <sub class="text-sm">/mo</sub>
+        </h2>
+        <p class="text-xs pb-5 lg:mb-2">
+          Lorem ipsum dolor sit amet consec adipisicing elit. Asperiores,
+          tempore.
+        </p>
+        <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <span class="text-xs flex items-center pb-5 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <div
+          class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
+          Suscribe
+        </div>
+      </div>
+
+      <div
+        class="w-[65%] border-2 border-gray-700 md:w-[31%]  p-3 rounded-md lg:rounded-md mb-4 py-10  lg:hover:scale-105 lg:w-[29%] lg:h-[50%] lg:transition-all lg:ease-linear lg:px-5 2xl:w-[22%] 2xl:mx-20 2xl:h-[75%] ">
+        <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
+        <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
+          $129 <sub class="text-sm">/mo</sub>
+        </h2>
+        <p class="text-xs pb-5 lg:mb-2">
+          Lorem ipsum dolor sit amet consec adipisicing elit. Asperiores,
+          tempore.
+        </p>
+        <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <span class="text-xs flex items-center pb-5 lg:text-sm lg:mb-3"><img src="../src/images/tick.png" alt=""
+            class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
+          dolor sit.</span>
+        <div
+          class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
+          Suscribe
+        </div>
+      </div>
+    </main>
+    <!--END OF SECTION 6-->
+  </main>
+
+  <!-- section 7 -->
+  <!-- integratable apps -->
+  <main class="w-full h-[120vh] mb-8">
+    <section class="w-full h-[15%]">
+      <div
+        class="w-full text-xl p-3 pt-12 font-bold text-center md:text-2xl md:w-[78%] md:m-auto md:pt-14 lg:w-[55%] lg:pb-7 2xl:text-3xl 2xl:w-[50%] 2xl:my-10"
+        style="font-family: 'Josefin Sans'">Bring in more data, drive more growth with our integrations</div>
+      </section>
+        <section class="w-full h-[85%] flex flex-col justify-between">
+          <!--1st items wrapper -->
+          <div class="w-full flex h-[23%] justify-around">
+            <div class="w-[40%] flex flex-col">
+              <span class="w-full borderlight h-[70%] bg-gray-700"></span>
+              <span class="w-full h-[30%] text-base flex items-center justify-center text-center">Canva</span>
             </div>
-            <button 
-              class="p-3 w-[40%] text-sm font-bold flex items-center justify-center bg-yellow-300 rounded-md text-black ml-2 cursor-pointer lg:text-base lg:outline-none lg:rounded-md lg:ml-5 lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">Send Guide
-          </button>
+            <div class="w-[40%] flex flex-col">
+              <span class="w-full borderlight h-[70%] bg-gray-700"></span>
+              <span class="w-full h-[30%] text-base flex items-center justify-center text-center">Mailchimp for Salesforce</span>
+            </div>
+          </div>
+          <!--2nd items wrapper -->
+          <div class="w-full flex h-[23%] justify-around">
+            <div class="w-[40%] flex flex-col">
+              <span class="w-full borderlight h-[70%] bg-gray-700"></span>
+              <span class="w-full h-[30%] text-base flex items-center justify-center text-center">Instagram</span>
+            </div>
+            <div class="w-[40%] flex flex-col">
+              <span class="w-full borderlight h-[70%] bg-gray-700"></span>
+              <span class="w-full h-[30%] text-base flex items-center justify-center text-center">Shopify</span>
+            </div>
+          </div>
+          <!--3rd items wrapper -->
+          <div class="w-full flex h-[23%] justify-around">
+            <div class="w-[40%] flex flex-col">
+              <span class="w-full borderlight h-[70%] bg-gray-700"></span>
+              <span class="w-full h-[30%] text-base flex items-center justify-center text-center">Google Analytics</span>
+            </div>
+            <div class="w-[40%] flex flex-col">
+              <span class="w-full borderlight h-[70%] bg-gray-700"></span>
+              <span class="w-full h-[30%] text-base flex items-center justify-center text-center">WooCommerce</span>
+            </div>
+          </div>
+          <!--4th items wrapper -->
+          <div class="w-full flex h-[23%] justify-around">
+            <div class="w-[40%] flex flex-col">
+              <span class="w-full borderlight h-[70%] bg-gray-700"></span>
+              <span class="w-full h-[30%] text-base flex items-center justify-center text-center">QuickBooks Online</span>
+            </div>
+            <div class="w-[40%] flex flex-col">
+              <span class="w-full borderlight h-[70%] bg-gray-700"></span>
+              <span class="w-full h-[30%] text-base flex items-center justify-center text-center">Squarespace Commerce</span>
+            </div>
           </div>
         </section>
-        <section class="w-1/2 hidden lg:block"></section>
-      </main>
+  </main>
 
-      <!-- section 5 -->
-      <!-- price tags -->
-      <main
-        class="w-full flex flex-col items-center my-6 md:flex-row md:justify-between px-5 lg:flex-row lg:my-0 lg:py-7 lg:px-10">
-        <!-- REMEMBER TO ADD SWIPER-JS TO THIS FOR SMALL SCREENS -->
-        <div
-          class="w-[65%] border-2 border-gray-700 md:w-[31%] p-3 rounded-md lg:w-[29%] lg:h-[50%] lg:rounded-md mb-8 py-10  lg:hover:scale-105 lg:transition-all lg:ease-linear lg:px-5 2xl:w-[22%] 2xl:mx-20 2xl:h-[75%]">
-          <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
-          <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
-            $39 <sub class="text-sm">/mo</sub>
-          </h2>
-          <p class="text-xs pb-5 lg:mb-2">
-            Lorem ipsum dolor sit amet consec adipisicing elit. Asperiores,
-            tempore.
-          </p>
-          <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <span class="text-xs flex items-center pb-5 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
-            Suscribe
-          </div>
-        </div>
-        <div
-          class="w-[65%] border-2 border-gray-700 md:w-[31%]  p-3 rounded-md lg:rounded-md mb-8 py-10 bg-gray-800 lg:w-[29%] lg:h-[50%]  lg:hover:scale-105 lg:transition-all lg:ease-linear lg:px-5 2xl:w-[22%] 2xl:mx-20 2xl:h-[75%]">
-          <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
-          <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
-            $59 <sub class="text-sm">/mo</sub>
-          </h2>
-          <p class="text-xs pb-5 lg:mb-2">
-            Lorem ipsum dolor sit amet consec adipisicing elit. Asperiores,
-            tempore.
-          </p>
-          <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <span class="text-xs flex items-center pb-5 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
-            Suscribe
-          </div>
-        </div>
+  <!-- section 8 -->
+  <!-- footer -->
+  <footer class="w-full h-[19vh] md:h-[20vh] bg-yellow-300 flex relative lg:h-[42.5vh]">
+    <section class="w-[57%] h-full p-2 lg:w-[55%] lg:flex flex-col lg:p-10">
+      <div class="w-full flex items-center text-black font-bold text-sm p-3 lg:text-xl">
+        <img src="../src/images/Remix-logo.png" alt="logo"
+          class="w-9 h-9 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full border-black border-2 mr-1 2xl:w-14 2xl:h-14 cursor-pointer" />
+        <h2 class="md:text-[20px]">Remix</h2>
+      </div>
+      <div class="hidden lg:block text-black p-3 text-sm">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        debitis maiores obcaecati assumenda modi, laborum tenetur laboriosam
+        nihil? Sit sapiente eligendi autem sequi ducimus qui, quos non labore
+        minima distinctio.
+      </div>
+      <div class="w-full text-xs items-center text-black font-bold p-3 md:text-[15px] lg:text-[16px] lg:flex">
+        <p class="">&copy 2023. All rights reserved.</p>
+        <br />
+        <p class=" lg:mt-1 ml-1">
+          Made with
+          <span class="mx-1"><img src="../src/images/Ezinne-love.png" alt="love"
+              class="w-[17px] h-[17px] inline lg:hover:scale-110 lg:transition-all lg:hover:ease-linear"
+              id="animate-heartbeat" /></span>
+          from Vince
+        </p>
+      </div>
+    </section>
+    <!-- social media -->
+    <section class="w-[45%] h-[20%] absolute bottom-4 right-2 flex ">
+      <div class="h-full w-[25%] flex items-center justify-center">
+        <img src="../src/images/Ezinne-facebook.png" alt="facebook-icon"
+          class="w-4 h-4 md:w-6 md:h-6 lg:w-7 lg:h-7 2xl:w-8 2xl:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear" />
+      </div>
+      <div class="h-full w-[25%] flex items-center justify-center">
+        <img src="../src/images/Ezinne-twitter.png" alt="twitter-icon"
+          class="w-4 h-4 md:w-6 md:h-6 lg:w-7 lg:h-7 2xl:w-8 2xl:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear" />
+      </div>
+      <div class="h-full w-[25%] flex items-center justify-center">
+        <img src="../src/images/Ezinne-linkedin.png" alt="linkedin-icon"
+          class="w-4 h-4 md:w-6 md:h-6 lg:w-7 lg:h-7 2xl:w-8 2xl:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear" />
+      </div>
+      <div class="h-full w-[25%] flex items-center justify-center">
+        <img src="../src/images/Ezinne-insta.png" alt="instagram-icon"
+          class="w-4 h-4 md:w-6 md:h-6 lg:w-7 lg:h-7 2xl:w-8 2xl:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear" />
+      </div>
+    </section>
+  </footer>
+  <!-- JavaScript -->
+  <script src="./app.js"></script>
+</body>
 
-        <div
-          class="w-[65%] border-2 border-gray-700 md:w-[31%]  p-3 rounded-md lg:rounded-md mb-4 py-10  lg:hover:scale-105 lg:w-[29%] lg:h-[50%] lg:transition-all lg:ease-linear lg:px-5 2xl:w-[22%] 2xl:mx-20 2xl:h-[75%] ">
-          <h5 class="text-xs pb-2 lg:text-base lg:mb-2">Basic</h5>
-          <h2 class="text-2xl pb-4 lg:text-6xl lg:mb-2">
-            $129 <sub class="text-sm">/mo</sub>
-          </h2>
-          <p class="text-xs pb-5 lg:mb-2">
-            Lorem ipsum dolor sit amet consec adipisicing elit. Asperiores,
-            tempore.
-          </p>
-          <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <span class="text-xs flex items-center pb-2 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <span class="text-xs flex items-center pb-5 lg:text-sm lg:mb-3"
-            ><img
-              src="../src/images/tick.png"
-              alt=""
-              class="bg-yellow-300 rounded-full w-6 h-6 mr-2" />Lorem ipsum
-            dolor sit.</span
-          >
-          <div
-            class="w-full bg-yellow-300 text-black flex items-center justify-center font-bold p-2 rounded-sm cursor-pointer lg:hover:bg-gray-700 lg:hover:text-white lg:transition-all lg:ease-linear lg:hover:scale-105">
-            Suscribe
-          </div>
-        </div>
-      </main>
-      <!--END OF SECTION 5-->
-    </main>
-    <!-- section 7 -->
-    <!-- footer -->
-    <footer class="w-full h-[19vh] md:h-[20vh] bg-yellow-300 flex relative lg:h-[42.5vh]">
-      <section class="w-[57%] h-full p-2 lg:w-[55%] lg:flex flex-col lg:p-10">
-        <div
-          class="w-full flex items-center text-black font-bold text-sm p-3 lg:text-xl">
-          <img
-            src="../src/images/Remix-logo.png"
-            alt="logo"
-            class="w-9 h-9 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full border-black border-2 mr-1 2xl:w-14 2xl:h-14 cursor-pointer" /><h2 class="md:text-[20px]">Remix</h2>
-        </div>
-        <div class="hidden lg:block text-black p-3 text-sm">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          debitis maiores obcaecati assumenda modi, laborum tenetur laboriosam
-          nihil? Sit sapiente eligendi autem sequi ducimus qui, quos non labore
-          minima distinctio.
-        </div>
-        <div
-          class="w-full text-xs items-center text-black font-bold p-3 md:text-[15px] lg:text-[16px] lg:flex">
-          <p class="">&copy 2023. All rights reserved.</p>
-          <br />
-          <p class=" lg:mt-1 ml-1">
-            Made with
-            <span class="mx-1"
-              ><img
-                src="../src/images/Ezinne-love.png"
-                alt="love"
-                class="w-[17px] h-[17px] inline lg:hover:scale-110 lg:transition-all lg:hover:ease-linear"
-                id="animate-heartbeat"
-            /></span>
-            from Vince
-          </p>
-        </div>
-      </section>
-      <!-- social media -->
-      <section class="w-[45%] h-[20%] absolute bottom-4 right-2 flex ">
-        <div class="h-full w-[25%] flex items-center justify-center">
-          <img
-            src="../src/images/Ezinne-facebook.png"
-            alt="facebook-icon"
-            class="w-4 h-4 md:w-6 md:h-6 lg:w-7 lg:h-7 2xl:w-8 2xl:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear" />
-        </div>
-        <div class="h-full w-[25%] flex items-center justify-center">
-          <img
-            src="../src/images/Ezinne-twitter.png"
-            alt="twitter-icon"
-            class="w-4 h-4 md:w-6 md:h-6 lg:w-7 lg:h-7 2xl:w-8 2xl:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear" />
-        </div>
-        <div class="h-full w-[25%] flex items-center justify-center">
-          <img
-            src="../src/images/Ezinne-linkedin.png"
-            alt="linkedin-icon"
-            class="w-4 h-4 md:w-6 md:h-6 lg:w-7 lg:h-7 2xl:w-8 2xl:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear" />
-        </div>
-        <div class="h-full w-[25%] flex items-center justify-center">
-          <img
-            src="../src/images/Ezinne-insta.png"
-            alt="instagram-icon"
-            class="w-4 h-4 md:w-6 md:h-6 lg:w-7 lg:h-7 2xl:w-8 2xl:h-8 cursor-pointer lg:hover:scale-110 lg:transition-all lg:hover:ease-linear" />
-        </div>
-      </section>
-    </footer>
-    <!-- JavaScript -->
-    <script src="./app.js"></script>
-  </body>
 </html>
