@@ -1309,6 +1309,10 @@ video {
     flex-direction: row-reverse;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -1342,6 +1346,14 @@ video {
 
   .md\:pt-14 {
     padding-top: 3.5rem;
+  }
+
+  .md\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .md\:pt-4 {
+    padding-top: 1rem;
   }
 
   .md\:text-center {
