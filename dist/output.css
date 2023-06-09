@@ -794,18 +794,6 @@ video {
   width: 100%;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
-}
-
-.w-\[87\%\] {
-  width: 87%;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -872,8 +860,9 @@ video {
   border-width: 2px;
 }
 
-.border-\[0\.5px\] {
-  border-width: 0.5px;
+.border-y-\[0\.5px\] {
+  border-top-width: 0.5px;
+  border-bottom-width: 0.5px;
 }
 
 .border-black {
@@ -884,6 +873,16 @@ video {
 .border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.bg-\[\#BBB8CA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 184 202 / var(--tw-bg-opacity));
 }
 
 .bg-gray-500 {
@@ -911,11 +910,6 @@ video {
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#BBB8CA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 184 202 / var(--tw-bg-opacity));
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -939,6 +933,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-2 {
@@ -993,6 +991,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1007,10 +1009,6 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
-}
-
-.pb-7 {
-  padding-bottom: 1.75rem;
 }
 
 .text-center {
@@ -1299,6 +1297,10 @@ video {
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
   }
 
   .md\:flex-row {
@@ -1630,11 +1632,6 @@ video {
     border-width: 0.5px;
   }
 
-  .lg\:border-gray-700 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81 / var(--tw-border-opacity));
-  }
-
   .lg\:border-gray-800 {
     --tw-border-opacity: 1;
     border-color: rgb(31 41 55 / var(--tw-border-opacity));
@@ -1695,6 +1692,10 @@ video {
     padding-bottom: 14px;
   }
 
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .lg\:pb-5 {
     padding-bottom: 1.25rem;
   }
@@ -1717,10 +1718,6 @@ video {
 
   .lg\:pt-7 {
     padding-top: 1.75rem;
-  }
-
-  .lg\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .lg\:text-left {
@@ -1912,6 +1909,10 @@ video {
     width: 65%;
   }
 
+  .\32xl\:w-\[85\%\] {
+    width: 85%;
+  }
+
   .\32xl\:w-\[90\%\] {
     width: 90%;
   }
@@ -1927,10 +1928,6 @@ video {
 
   .\32xl\:w-full {
     width: 100%;
-  }
-
-  .\32xl\:w-\[85\%\] {
-    width: 85%;
   }
 
   .\32xl\:flex-row {
