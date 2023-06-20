@@ -649,14 +649,6 @@ video {
   height: 10vh;
 }
 
-.h-\[120vh\] {
-  height: 120vh;
-}
-
-.h-\[15\%\] {
-  height: 15%;
-}
-
 .h-\[15vh\] {
   height: 15vh;
 }
@@ -709,8 +701,8 @@ video {
   height: 80%;
 }
 
-.h-\[85\%\] {
-  height: 85%;
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .h-fit {
@@ -720,18 +712,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[70vh\] {
-  height: 70vh;
-}
-
-.h-\[90vh\] {
-  height: 90vh;
 }
 
 .w-1\/2 {
@@ -770,10 +750,6 @@ video {
   width: 25%;
 }
 
-.w-\[30\%\] {
-  width: 30%;
-}
-
 .w-\[40\%\] {
   width: 40%;
 }
@@ -802,12 +778,12 @@ video {
   width: 80%;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .cursor-pointer {
@@ -876,11 +852,6 @@ video {
   border-width: 2px;
 }
 
-.border-y-\[0\.5px\] {
-  border-top-width: 0.5px;
-  border-bottom-width: 0.5px;
-}
-
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -889,11 +860,6 @@ video {
 .border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 .bg-\[\#BBB8CA\] {
@@ -949,10 +915,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .px-2 {
@@ -1025,10 +987,6 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .pt-7 {
@@ -1237,6 +1195,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1302,6 +1264,10 @@ video {
     width: 60%;
   }
 
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .md\:w-\[75\%\] {
     width: 75%;
   }
@@ -1323,8 +1289,12 @@ video {
     width: fit-content;
   }
 
-  .md\:w-\[70\%\] {
-    width: 70%;
+  .md\:w-\[10\%\] {
+    width: 10%;
+  }
+
+  .md\:w-\[20\%\] {
+    width: 20%;
   }
 
   .md\:flex-row {
@@ -1345,6 +1315,10 @@ video {
 
   .md\:p-\[6px\] {
     padding: 6px;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
   }
 
   .md\:px-14 {
