@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-poppins;
+}
+
 .border{
     @apply border-4 border-white
 }
@@ -14,6 +18,8 @@
 .bordermain{
     @apply border-t-2 border-gray-500 rounded-md
 }
+
+  
 
 ::-webkit-scrollbar {
     display: none;

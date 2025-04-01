@@ -2,7 +2,10 @@ module.exports = {
   purge: ['./src/**/*.html', './src/**/*.js'],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+    },
   },
   variants: {
     extend: {},
